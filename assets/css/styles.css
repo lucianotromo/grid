@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "H H H H H"
+        "A M M M M";
+}
+
+header {
+    grid-area: H;
+    border: solid rgb(7, 7, 7) 1px;
+    height: 4rem;
+    background-color: blue;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+aside {
+    grid-area: A;
+    border: solid rgb(7, 7, 7) 1px;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+h1 {
+    margin-left: 2rem;
+    margin: 1.5rem;
+}
+
+.categorias {
+    margin-left: 2rem;
+    font-size: 25px;
+}
+
+main {
+    grid-area: M;
+    border: solid rgb(7, 7, 7) 1px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    max-width: 1200px;
+}
